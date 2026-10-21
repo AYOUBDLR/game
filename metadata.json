@@ -1,0 +1,6 @@
+{
+  "name": "YesPlugin - Apps & Games Tweaks Store",
+  "description": "Discover and install trending tweaked apps, modded games, and private servers for iOS and Android.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
