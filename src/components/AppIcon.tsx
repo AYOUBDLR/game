@@ -182,7 +182,7 @@ export const AppIcon: React.FC<AppIconProps> = ({ type, iconUrl, className = '',
       default:
         return (
           <div className={`relative flex items-center justify-center bg-gradient-to-br from-blue-600 to-indigo-700 text-white font-bold shadow-md ${sizeClasses} ${className}`}>
-            <span className="text-xl">YP</span>
+            <span className="text-xl">TL</span>
           </div>
         );
     }

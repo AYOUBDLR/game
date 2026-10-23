@@ -15,7 +15,7 @@ export const HowToInstallModal: React.FC<HowToInstallModalProps> = ({ isOpen, on
   const faqs = [
     {
       q: 'Do I need Jailbreak (iOS) or Root (Android)?',
-      a: 'No! All tweaks on YesPlugin are engineered with standalone dynamic libraries (dYlibs) or run on dedicated private sandbox servers (e.g. Null\'s Brawl). Your device remains 100% on standard official firmware.',
+      a: 'No! All tweaks on TapLoad are engineered with standalone dynamic libraries (dYlibs) or run on dedicated private sandbox servers (e.g. Null\'s Brawl). Your device remains 100% on standard official firmware.',
     },
     {
       q: 'Can my main account get banned?',
@@ -27,7 +27,7 @@ export const HowToInstallModal: React.FC<HowToInstallModalProps> = ({ isOpen, on
     },
     {
       q: 'How do I update an installed tweak?',
-      a: 'Simply visit YesPlugin again, find the updated title, and tap "GET / INSTALL". The newer version will overwrite the existing version while keeping your saved progress.',
+      a: 'Simply visit TapLoad again, find the updated title, and tap "GET / INSTALL". The newer version will overwrite the existing version while keeping your saved progress.',
     },
   ];
 
@@ -105,7 +105,7 @@ export const HowToInstallModal: React.FC<HowToInstallModalProps> = ({ isOpen, on
                     Open in Safari Browser
                   </h4>
                   <p className="text-slate-500 dark:text-slate-400">
-                    Always visit YesPlugin using Apple Safari on your iPhone or iPad. Other third-party browsers cannot handle native configuration profiles.
+                    Always visit TapLoad using Apple Safari on your iPhone or iPad. Other third-party browsers cannot handle native configuration profiles.
                   </p>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export const HowToInstallModal: React.FC<HowToInstallModalProps> = ({ isOpen, on
                     Download APK Package
                   </h4>
                   <p className="text-slate-500 dark:text-slate-400">
-                    Tap the <strong>GET</strong> or <strong>INSTALL</strong> button for any game or app on YesPlugin. The direct APK file will download immediately.
+                    Tap the <strong>GET</strong> or <strong>INSTALL</strong> button for any game or app on TapLoad. The direct APK file will download immediately.
                   </p>
                 </div>
               </div>

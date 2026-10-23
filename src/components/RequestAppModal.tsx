@@ -52,7 +52,7 @@ export const RequestAppModal: React.FC<RequestAppModalProps> = ({ isOpen, onClos
               <CheckCircle2 className="w-6 h-6" />
             </div>
             <h4 className="font-bold text-slate-900 dark:text-white text-sm">
-              Request Submitted to YesPlugin Modders!
+              Request Submitted to TapLoad Modders!
             </h4>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               Our reverse-engineering team prioritizes apps with multiple requests.

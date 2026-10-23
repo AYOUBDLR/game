@@ -156,7 +156,7 @@ export const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
                 <User className="w-5 h-5 text-blue-500 mb-1 stroke-[1.8]" />
                 <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400">Developer:</span>
                 <span className="text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100">
-                  YesPlugins
+                  TapLoad
                 </span>
               </div>
 

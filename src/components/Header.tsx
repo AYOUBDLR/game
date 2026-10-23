@@ -35,10 +35,10 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={onLogoClick}
             className="flex items-center gap-2.5 group cursor-pointer text-left focus:outline-none"
           >
-            {/* YP Monogram Logo matching screenshot */}
+            {/* TL Monogram Logo matching screenshot */}
             <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-[#0f172a] dark:bg-blue-600 text-white shadow-sm transition-transform group-hover:scale-105">
               <span className="font-black text-xl tracking-tighter select-none font-sans">
-                YP
+                TL
               </span>
               <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse ring-2 ring-white dark:ring-slate-900" />
             </div>
@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex flex-col">
               <div className="flex items-center gap-1">
                 <span className="text-xl font-extrabold text-[#0f172a] dark:text-white tracking-tight">
-                  Yes<span className="text-blue-600 dark:text-blue-400">Plugin</span>
+                  Tap<span className="text-blue-600 dark:text-blue-400">Load</span>
                 </span>
               </div>
               <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest hidden sm:block">

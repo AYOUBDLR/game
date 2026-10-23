@@ -32,7 +32,7 @@ export default function App() {
   // Bookmarks persistence
   const [bookmarkedIds, setBookmarkedIds] = useState<string[]>(() => {
     try {
-      const saved = localStorage.getItem('yesplugin_bookmarks');
+      const saved = localStorage.getItem('tapload_bookmarks') || localStorage.getItem('yesplugin_bookmarks');
       return saved ? JSON.parse(saved) : ['noomiclone-mod', 'tomodachi-life'];
     } catch {
       return ['noomiclone-mod', 'tomodachi-life'];
@@ -42,7 +42,7 @@ export default function App() {
   // Dark mode state
   const [isDark, setIsDark] = useState<boolean>(() => {
     try {
-      const saved = localStorage.getItem('yesplugin_theme');
+      const saved = localStorage.getItem('tapload_theme') || localStorage.getItem('yesplugin_theme');
       if (saved) return saved === 'dark';
       return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     } catch {
@@ -53,16 +53,16 @@ export default function App() {
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('yesplugin_theme', 'dark');
+      localStorage.setItem('tapload_theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('yesplugin_theme', 'light');
+      localStorage.setItem('tapload_theme', 'light');
     }
   }, [isDark]);
 
   useEffect(() => {
     try {
-      localStorage.setItem('yesplugin_bookmarks', JSON.stringify(bookmarkedIds));
+      localStorage.setItem('tapload_bookmarks', JSON.stringify(bookmarkedIds));
     } catch (e) {
       // ignore storage error
     }
@@ -302,7 +302,7 @@ export default function App() {
                     Games-Only Store
                   </h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto mt-1 leading-relaxed">
-                    YesPlugin is currently configured with 4 top modded games: <strong>NoomiClone Mod</strong>, <strong>Speed Stars Mod</strong>, <strong>Meccha Chameleon</strong>, and <strong>Tomodachi Life</strong>.
+                    TapLoad is currently configured with 4 top modded games: <strong>NoomiClone Mod</strong>, <strong>Speed Stars Mod</strong>, <strong>Meccha Chameleon</strong>, and <strong>Tomodachi Life</strong>.
                   </p>
                   <div className="mt-4 flex items-center justify-center gap-3">
                     <button
@@ -373,7 +373,7 @@ export default function App() {
       <footer className="mt-auto border-t border-slate-200/80 dark:border-slate-800/80 py-6 px-4 bg-white/50 dark:bg-slate-950 text-center text-xs text-slate-500 dark:text-slate-400">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-slate-800 dark:text-slate-200">YesPlugin</span>
+            <span className="font-bold text-slate-800 dark:text-slate-200">TapLoad</span>
             <span>&copy; {new Date().getFullYear()} • Safe Tweaks &amp; Modded Games</span>
           </div>
           <div className="flex items-center gap-4 text-[11px]">

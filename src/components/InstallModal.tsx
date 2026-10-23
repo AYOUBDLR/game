@@ -141,7 +141,7 @@ export const InstallModal: React.FC<InstallModalProps> = ({ app, onClose }) => {
                   Select Your Device Platform
                 </h4>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
-                  YesPlugin will tailor the unsigned profile or APK specific to your operating system.
+                  TapLoad will tailor the unsigned profile or APK specific to your operating system.
                 </p>
               </div>
 
